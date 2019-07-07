@@ -1,0 +1,6 @@
+22:57:18 **** Build of project fdm_peek1_bsp ****
+make -k all 
+make: *** 没有规则可以创建目标“all”.
+
+22:57:18 Build Finished (took 595ms)
+

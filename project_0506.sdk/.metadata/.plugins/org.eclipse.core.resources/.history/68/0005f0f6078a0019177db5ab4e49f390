@@ -1,0 +1,14 @@
+/*
+ * macro.h
+ *
+ *  Created on: 2019Äê6ÔÂ8ÈÕ
+ *      Author: W530
+ */
+
+#ifndef SRC_CORE_MACROS_H_
+#define SRC_CORE_MACROS_H_
+
+#define NUM_AXIS 5
+#define XYZE     5
+
+#endif /* SRC_CORE_MACROS_H_ */

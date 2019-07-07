@@ -1,0 +1,16 @@
+/*
+ * fastio.h
+ *
+ *  Created on: 2019Äê6ÔÂ30ÈÕ
+ *      Author: W530
+ */
+
+#ifndef SRC_HAL_HAL_AVR_FASTIO_H_
+#define SRC_HAL_HAL_AVR_FASTIO_H_
+
+//#include <avr/io.h>
+#include "../../core/macros.h"
+
+
+
+#endif /* SRC_HAL_HAL_AVR_FASTIO_H_ */

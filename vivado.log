@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon May 06 18:52:02 2019
+# Process ID: 10352
+# Current directory: E:/Projects/3D/project_0506
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1888 E:\Projects\3D\project_0506\project_0506.xpr
+# Log file: E:/Projects/3D/project_0506/vivado.log
+# Journal file: E:/Projects/3D/project_0506\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Projects/3D/project_0506/project_0506.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 835.703 ; gain = 253.430
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 06 18:53:36 2019...

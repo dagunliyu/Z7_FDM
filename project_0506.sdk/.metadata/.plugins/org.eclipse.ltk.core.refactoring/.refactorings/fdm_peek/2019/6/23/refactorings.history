@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;fdm_peek/fdm_config&apos; to &apos;fdm_config.h&apos;" description="Rename resource &apos;fdm_config&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="fdm_config" name="fdm_config.h" stamp="1560006447068" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;fdm_peek/src/core/macro.h&apos; to &apos;macros.h&apos;" description="Rename resource &apos;macro.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/core/macro.h" name="macros.h" stamp="1560007863555" updateReferences="true"/>
+</session>

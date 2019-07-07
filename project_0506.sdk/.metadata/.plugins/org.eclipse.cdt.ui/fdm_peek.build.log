@@ -1,0 +1,23 @@
+20:04:23 **** Incremental Build of configuration Debug for project fdm_peek ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: fdm_peek.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fdm_peek_bsp/ps7_cortexa9_0/lib -o "fdm_peek.elf"  ./src/module/temperature/temperature.o  ./src/module/motion/planner.o ./src/module/motion/stepper.o  ./src/module/printcounter.o  ./src/libs/nozzle.o ./src/libs/stopwatch.o  ./src/gcode/gcode.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fdm_peek.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fdm_peek.elf  |tee "fdm_peek.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18992	   1144	  22576	  42712	   a6d8	fdm_peek.elf
+'Finished building: fdm_peek.elf.size'
+' '
+
+20:04:28 Build Finished (took 4s.317ms)
+

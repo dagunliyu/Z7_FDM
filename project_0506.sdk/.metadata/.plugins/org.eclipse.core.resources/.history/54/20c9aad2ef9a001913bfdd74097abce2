@@ -1,0 +1,20 @@
+/*
+ * fastio.h
+ *
+ *  Created on: 2019Äê6ÔÂ30ÈÕ
+ *      Author: W530
+ */
+
+#ifndef SRC_HAL_HAL_AVR_FASTIO_H_
+#define SRC_HAL_HAL_AVR_FASTIO_H_
+
+//#include <avr/io.h>
+#include "../../core/macros.h"
+
+
+#ifndef _BV
+  #define _BV(PIN) (1UL << PIN)
+#endif
+
+
+#endif /* SRC_HAL_HAL_AVR_FASTIO_H_ */

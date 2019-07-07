@@ -1,0 +1,22 @@
+
+// 190608
+#ifndef FDM_CONFIG_H
+#define FDM_CONFIG_H
+
+
+//#include "HAL/HAL_AVR/fastio.h"
+#include "core/macros.h"
+#include "core/boards.h"
+#include "inc/Version.h"
+#include "config/Configuration.h"
+//#include "config/Conditionals_LCD.h"
+#include "config/Configuration_adv.h"
+//#include "pins/pins.h"
+#ifndef USBCON
+  #define HardwareSerial_h // trick to disable the standard HWserial
+#endif
+//#include "Arduino.h"
+#include "config/Conditionals_post.h"
+#include "inc/SanityCheck.h"      // ∏®÷˙◊ˆ”Ô∑®ºÏ≤‚,±‹√‚≈‰÷√≥ˆ¥Ì
+
+#endif // FDM_CONFIG_H

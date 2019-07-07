@@ -1,0 +1,22 @@
+/*
+ * Version.h
+ *
+ *  Created on: 2019Äê6ÔÂ30ÈÕ
+ *      Author: W530
+ */
+
+#ifndef SRC_INC_VERSION_H_
+#define SRC_INC_VERSION_H_
+
+#if ENABLED(USE_AUTOMATIC_VERSIONING)
+
+	#include "_Version.h"
+
+#else
+	/**
+	* Marlin release version identifier
+	*/
+	#define SHORT_BUILD_VERSION "1.1.6"
+
+
+#endif /* SRC_INC_VERSION_H_ */

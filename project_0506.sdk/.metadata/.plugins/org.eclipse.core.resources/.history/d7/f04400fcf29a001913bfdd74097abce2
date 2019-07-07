@@ -1,0 +1,171 @@
+/*
+ * enum.h
+ *
+ *  Created on: 2019年6月8日
+ *      Author: W530
+ */
+
+#ifndef SRC_CORE_ENUM_H_
+#define SRC_CORE_ENUM_H_
+
+#include "../fdm_config.h"  // 替换MarlinConfig.h
+
+/*
+ * 轴索引枚举常数
+ * 特殊的轴:
+ *  - COREXY打印机使用A_AXIS和B_AXIS
+ *  - X_HEAD和Y_HEAD用于在X_AXIS和X_Head移动（movement）之间没有1:1关系的系统，比如说corexy bots
+ */
+enum AxisEnum {
+	NO_AXIS = -1,
+	X_AXIS = 0,
+	A_AXIS = 0,
+	Y_AXIS = 1,
+	B_AXIS = 1,
+	Z_AXIS = 2,
+	C_AXIS = 2,
+	E_AXIS = 3,
+	X_HEAD = 4,
+	Y_HEAD = 5,
+	Z_HEAD = 6,
+	ALL_AXES = 100
+};
+
+/*
+ * 长度单位枚举常数：mm和inch 
+ * 1inch(英寸) = 2.54cm = 25.4mm;  1foot(英尺) = 12英寸
+ * 直接换名字 LinearUnit
+ */
+typedef enum {
+  LINEARUNIT_MM,
+  LINEARUNIT_INCH
+} LinearUnit;
+
+/*
+ * 温度单位枚举常数：摄氏度C, 开尔文K, 华氏F  
+ * 摄氏温度和开尔文温度的关系：°K=°C+273.15
+ * 摄氏温度和华氏温度的关系 ：　T °F = 1.8t°C + 32 (t为摄氏温度数,T为华氏温度数) 
+ */
+typedef enum {
+  TEMPUNIT_C,
+  TEMPUNIT_K,
+  TEMPUNIT_F
+} TempUnit;
+
+
+/**
+ * Debug使用的标志位
+ * 尚未广泛应用
+ */
+enum DebugFlags {
+  DEBUG_NONE          = 0,
+  DEBUG_ECHO          = _BV(0), ///< Echo commands in order as they are processed
+  DEBUG_INFO          = _BV(1), ///< Print messages for code that has debug output
+  DEBUG_ERRORS        = _BV(2), ///< Not implemented
+  DEBUG_DRYRUN        = _BV(3), ///< Ignore temperature setting and E movement commands
+  DEBUG_COMMUNICATION = _BV(4), ///< Not implemented
+  DEBUG_LEVELING      = _BV(5), ///< Print detailed output for homing and leveling
+  DEBUG_MESH_ADJUST   = _BV(6), ///< UBL bed leveling
+  DEBUG_ALL           = 0xFF
+};
+
+enum EndstopEnum {
+  X_MIN,
+  Y_MIN,
+  Z_MIN,
+  Z_MIN_PROBE,
+  X_MAX,
+  Y_MAX,
+  Z_MAX,
+  Z2_MIN,
+  Z2_MAX
+};
+
+/**
+ * SD Card
+ */
+enum LsAction { LS_SerialPrint, LS_Count, LS_GetFilename };
+
+/**
+ * Ultra LCD
+ */
+enum LCDViewAction {
+  LCDVIEW_NONE,
+  LCDVIEW_REDRAW_NOW,
+  LCDVIEW_CALL_REDRAW_NEXT,
+  LCDVIEW_CLEAR_CALL_REDRAW,
+  LCDVIEW_CALL_NO_REDRAW
+};
+
+/**
+ * 管理下位机和上位机间通讯的状态
+ * 如果blcoked或者busy，则下位机向上位机发送消息 messages 
+ */
+#if ENABLED(HOST_KEEPALIVE_FEATURE)
+  enum MarlinBusyState {
+    NOT_BUSY,           // Not in a handler
+    IN_HANDLER,         // 正在执行gcode
+    IN_PROCESS,         // Known to be blocking command input (as in G29)
+    PAUSED_FOR_USER,    // Blocking pending any input
+    PAUSED_FOR_INPUT    // Blocking pending text input (concept)
+  };
+#endif
+
+#if ENABLED(EMERGENCY_PARSER)
+  enum e_parser_state {
+    state_RESET,
+    state_N,
+    state_M,
+    state_M1,
+    state_M10,
+    state_M108,
+    state_M11,
+    state_M112,
+    state_M4,
+    state_M41,
+    state_M410,
+    state_IGNORE // to '\n'
+  };
+#endif
+
+#if ENABLED(ADVANCED_PAUSE_FEATURE)
+  enum AdvancedPauseMenuResponse {
+    ADVANCED_PAUSE_RESPONSE_WAIT_FOR,
+    ADVANCED_PAUSE_RESPONSE_EXTRUDE_MORE,
+    ADVANCED_PAUSE_RESPONSE_RESUME_PRINT
+  };
+
+  #if ENABLED(ULTIPANEL)
+    enum AdvancedPauseMessage {
+      ADVANCED_PAUSE_MESSAGE_INIT,
+      ADVANCED_PAUSE_MESSAGE_UNLOAD,
+      ADVANCED_PAUSE_MESSAGE_INSERT,
+      ADVANCED_PAUSE_MESSAGE_LOAD,
+      ADVANCED_PAUSE_MESSAGE_EXTRUDE,
+      ADVANCED_PAUSE_MESSAGE_OPTION,
+      ADVANCED_PAUSE_MESSAGE_RESUME,
+      ADVANCED_PAUSE_MESSAGE_STATUS,
+      ADVANCED_PAUSE_MESSAGE_CLICK_TO_HEAT_NOZZLE,
+      ADVANCED_PAUSE_MESSAGE_WAIT_FOR_NOZZLES_TO_HEAT
+    };
+  #endif
+#endif
+  
+/**
+ * 双 X-Carriage模式. 双喷嘴也可以do duplication.
+ */
+#if ENABLED(DUAL_X_CARRIAGE) || ENABLED(DUAL_NOZZLE_DUPLICATION_MODE)
+  enum DualXMode {
+	DXC_FULL_CONTROL_MODE,  // DUAL_X_CARRIAGE only
+	DXC_AUTO_PARK_MODE,     // DUAL_X_CARRIAGE only
+	DXC_DUPLICATION_MODE
+  };
+#endif    
+/**
+* Workspace planes only apply to G2/G3 moves
+* (and "canned cycles" - not a current feature)
+*/
+#if ENABLED(CNC_WORKSPACE_PLANES)
+enum WorkspacePlane { PLANE_XY, PLANE_ZX, PLANE_YZ };
+#endif    
+#endif /* SRC_CORE_ENUM_H_ */

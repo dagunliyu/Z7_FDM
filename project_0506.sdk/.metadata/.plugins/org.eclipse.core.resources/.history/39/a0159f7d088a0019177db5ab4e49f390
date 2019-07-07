@@ -1,0 +1,21 @@
+/*
+ * macro.h
+ *
+ *  Created on: 2019年6月8日
+ *      Author: W530
+ */
+
+#ifndef SRC_CORE_MACROS_H_
+#define SRC_CORE_MACROS_H_
+
+#define NUM_AXIS 5
+#define XYZE     5
+#define ABC		 3
+#define XYZ 	 3
+
+// GNU C 的一大特色就是__attribute__ 机制
+//__attribute__ 可以设置函数属性（Function Attribute）、变量属性（Variable Attribute）和类型属性（Type Attribute）。
+//__attribute__((always_inline))
+#define FORCE_INLINE __attribute__((always_inline)) inline
+
+#endif /* SRC_CORE_MACROS_H_ */

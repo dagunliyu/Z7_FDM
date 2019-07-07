@@ -1,0 +1,626 @@
+08:07:26 **** Build of project fdm_peek_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_6/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_6/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from sleep.c:57:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:60:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:54:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:53:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+08:08:05 **** Build of configuration Debug for project fdm_peek ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/libs/stopwatch.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/libs/stopwatch.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/libs/stopwatch.d" -MT"src/libs/stopwatch.o" -o "src/libs/stopwatch.o" "../src/libs/stopwatch.cpp"
+In file included from ../src/libs/../fdm_config.h:7:0,
+                 from ../src/libs/../fdm_main.h:23,
+                 from ../src/libs/stopwatch.cpp:8:
+../src/libs/../config/Configuration.h:172:12: error: missing binary operator before token "("
+ #if ENABLED(SlidingModeTemp)
+            ^
+../src/libs/../config/Configuration.h:197:12: error: missing binary operator before token "("
+ #if ENABLED(PIDTEMP)
+            ^
+In file included from ../src/libs/../fdm_config.h:7:0,
+                 from ../src/libs/../fdm_main.h:23,
+                 from ../src/libs/stopwatch.cpp:8:
+../src/libs/../config/Configuration.h:249:12: error: missing binary operator before token "("
+ #if ENABLED(PIDTEMPBED)
+            ^
+In file included from ../src/libs/stopwatch.cpp:8:0:
+../src/libs/../fdm_main.h:27:12: error: missing binary operator before token "("
+ #if ENABLED(PRINTCOUNTER)
+            ^
+In file included from ../src/libs/stopwatch.cpp:9:0:
+../src/libs/stopwatch.h:86:13: error: missing binary operator before token "("
+  #if ENABLED(DEBUG_STOPWATCH)
+             ^
+../src/libs/stopwatch.cpp:30:12: error: missing binary operator before token "("
+ #if ENABLED(DEBUG_STOPWATCH)
+            ^
+../src/libs/stopwatch.cpp:43:12: error: missing binary operator before token "("
+ #if ENABLED(DEBUG_STOPWATCH)
+            ^
+../src/libs/stopwatch.cpp:87:12: error: missing binary operator before token "("
+ #if ENABLED(DEBUG_STOPWATCH)
+            ^
+../src/libs/stopwatch.cpp:87:0: error: unterminated #if
+ #if ENABLED(DEBUG_STOPWATCH)
+ 
+In file included from ../src/libs/stopwatch.cpp:9:0:
+../src/libs/stopwatch.h:26:2: error: 'millis_t' does not name a type; did you mean 'lldiv_t'?
+  millis_t accumulator;
+  ^~~~~~~~
+  lldiv_t
+../src/libs/stopwatch.h:27:2: error: 'millis_t' does not name a type; did you mean 'lldiv_t'?
+  millis_t startTimestamp;
+  ^~~~~~~~
+  lldiv_t
+../src/libs/stopwatch.h:28:2: error: 'millis_t' does not name a type; did you mean 'lldiv_t'?
+  millis_t stopTimestamp;
+  ^~~~~~~~
+  lldiv_t
+../src/libs/stopwatch.h:83:5: error: 'millis_t' does not name a type; did you mean 'lldiv_t'?
+     millis_t duration();
+     ^~~~~~~~
+     lldiv_t
+../src/libs/stopwatch.cpp: In member function 'bool Stopwatch::stop()':
+../src/libs/stopwatch.cpp:22:9: error: 'class Stopwatch' has no member named 'stopTimestamp'
+   this->stopTimestamp = millis();
+         ^~~~~~~~~~~~~
+../src/libs/stopwatch.cpp:22:25: error: 'millis' was not declared in this scope
+   this->stopTimestamp = millis();
+                         ^~~~~~
+../src/libs/stopwatch.cpp:22:25: note: suggested alternative: 'malloc'
+   this->stopTimestamp = millis();
+                         ^~~~~~
+                         malloc
+../src/libs/stopwatch.cpp: In member function 'bool Stopwatch::pause()':
+../src/libs/stopwatch.cpp:36:9: error: 'class Stopwatch' has no member named 'stopTimestamp'
+   this->stopTimestamp = millis();
+         ^~~~~~~~~~~~~
+../src/libs/stopwatch.cpp:36:25: error: 'millis' was not declared in this scope
+   this->stopTimestamp = millis();
+                         ^~~~~~
+../src/libs/stopwatch.cpp:36:25: note: suggested alternative: 'malloc'
+   this->stopTimestamp = millis();
+                         ^~~~~~
+                         malloc
+../src/libs/stopwatch.cpp: In member function 'bool Stopwatch::start()':
+../src/libs/stopwatch.cpp:49:10: error: 'class Stopwatch' has no member named 'accumulator'
+    this->accumulator = this->duration();
+          ^~~~~~~~~~~
+../src/libs/stopwatch.cpp:49:30: error: 'class Stopwatch' has no member named 'duration'
+    this->accumulator = this->duration();
+                              ^~~~~~~~
+../src/libs/stopwatch.cpp:55:9: error: 'class Stopwatch' has no member named 'startTimestamp'
+   this->startTimestamp = millis();
+         ^~~~~~~~~~~~~~
+../src/libs/stopwatch.cpp:55:26: error: 'millis' was not declared in this scope
+   this->startTimestamp = millis();
+                          ^~~~~~
+../src/libs/stopwatch.cpp:55:26: note: suggested alternative: 'malloc'
+   this->startTimestamp = millis();
+                          ^~~~~~
+                          malloc
+../src/libs/stopwatch.cpp: In member function 'void Stopwatch::reset()':
+../src/libs/stopwatch.cpp:68:8: error: 'class Stopwatch' has no member named 'startTimestamp'
+  this->startTimestamp = 0;
+        ^~~~~~~~~~~~~~
+../src/libs/stopwatch.cpp:69:8: error: 'class Stopwatch' has no member named 'stopTimestamp'
+  this->stopTimestamp = 0;
+        ^~~~~~~~~~~~~
+../src/libs/stopwatch.cpp:70:8: error: 'class Stopwatch' has no member named 'accumulator'
+  this->accumulator = 0;
+        ^~~~~~~~~~~
+../src/libs/stopwatch.cpp: At global scope:
+../src/libs/stopwatch.cpp:82:1: error: 'millis_t' does not name a type; did you mean 'lldiv_t'?
+ millis_t Stopwatch::duration() {
+ ^~~~~~~~
+ lldiv_t
+make: *** [src/libs/stopwatch.o] ´íÎó 1
+11:47:18 **** Incremental Build of configuration Debug for project fdm_peek ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/libs/stopwatch.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/libs/stopwatch.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/libs/stopwatch.d" -MT"src/libs/stopwatch.o" -o "src/libs/stopwatch.o" "../src/libs/stopwatch.cpp"
+'Finished building: ../src/libs/stopwatch.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/fdm_config.h:7:0,
+                 from ../src/fdm_main.h:23,
+                 from ../src/main.cc:5:
+../src/config/Configuration.h:172:12: error: missing binary operator before token "("
+ #if ENABLED(SlidingModeTemp)
+            ^
+../src/config/Configuration.h:197:12: error: missing binary operator before token "("
+ #if ENABLED(PIDTEMP)
+            ^
+In file included from ../src/fdm_config.h:7:0,
+                 from ../src/fdm_main.h:23,
+                 from ../src/main.cc:5:
+../src/config/Configuration.h:249:12: error: missing binary operator before token "("
+ #if ENABLED(PIDTEMPBED)
+            ^
+In file included from ../src/main.cc:14:0:
+../src/core/language.h:282:10: error: #include expects "FILENAME" or <FILENAME>
+ #include INCLUDE_LANGUAGE
+          ^~~~~~~~~~~~~~~~
+../src/core/language.h:284:14: error: missing binary operator before token "("
+  #if DISABLED(SIMULATE_ROMFONT) \
+              ^
+../src/main.cc:19:10: fatal error: core/types.h: No such file or directory
+ #include "core/types.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] ´íÎó 1
+11:48:50 **** Incremental Build of configuration Debug for project fdm_peek ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/fdm_config.h:7:0,
+                 from ../src/fdm_main.h:23,
+                 from ../src/main.cc:5:
+../src/config/Configuration.h:172:12: error: missing binary operator before token "("
+ #if ENABLED(SlidingModeTemp)
+            ^
+../src/config/Configuration.h:197:12: error: missing binary operator before token "("
+ #if ENABLED(PIDTEMP)
+            ^
+In file included from ../src/fdm_config.h:7:0,
+                 from ../src/fdm_main.h:23,
+                 from ../src/main.cc:5:
+../src/config/Configuration.h:249:12: error: missing binary operator before token "("
+ #if ENABLED(PIDTEMPBED)
+            ^
+make: *** [src/main.o] ´íÎó 1
+16:26:06 **** Clean-only build of configuration Debug for project fdm_peek ****
+make clean 
+rm -rf  ./src/main.d  ./src/module/temperature/temperature.o  ./src/module/motion/planner.o ./src/module/motion/stepper.o  ./src/module/printcounter.o  ./src/libs/nozzle.o ./src/libs/stopwatch.o  ./src/gcode/gcode.o  ./src/main.o  ./src/module/temperature/temperature.d  ./src/module/motion/planner.d ./src/module/motion/stepper.d  ./src/module/printcounter.d  ./src/libs/nozzle.d ./src/libs/stopwatch.d  ./src/gcode/gcode.d  fdm_peek.elf.size  fdm_peek.elf
+' '
+16:26:08 **** Incremental Build of configuration Debug for project fdm_peek ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/module/temperature/temperature.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/module/temperature/temperature.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/module/temperature/temperature.d" -MT"src/module/temperature/temperature.o" -o "src/module/temperature/temperature.o" "../src/module/temperature/temperature.cpp"
+'Finished building: ../src/module/temperature/temperature.cpp'
+' '
+'Building file: ../src/module/motion/planner.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/module/motion/planner.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/module/motion/planner.d" -MT"src/module/motion/planner.o" -o "src/module/motion/planner.o" "../src/module/motion/planner.cpp"
+'Finished building: ../src/module/motion/planner.cpp'
+' '
+'Building file: ../src/module/motion/stepper.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/module/motion/stepper.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/module/motion/stepper.d" -MT"src/module/motion/stepper.o" -o "src/module/motion/stepper.o" "../src/module/motion/stepper.cpp"
+'Finished building: ../src/module/motion/stepper.cpp'
+' '
+'Building file: ../src/module/printcounter.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/module/printcounter.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/module/printcounter.d" -MT"src/module/printcounter.o" -o "src/module/printcounter.o" "../src/module/printcounter.cpp"
+'Finished building: ../src/module/printcounter.cpp'
+' '
+'Building file: ../src/libs/nozzle.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/libs/nozzle.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/libs/nozzle.d" -MT"src/libs/nozzle.o" -o "src/libs/nozzle.o" "../src/libs/nozzle.cpp"
+'Finished building: ../src/libs/nozzle.cpp'
+' '
+'Building file: ../src/libs/stopwatch.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/libs/stopwatch.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/libs/stopwatch.d" -MT"src/libs/stopwatch.o" -o "src/libs/stopwatch.o" "../src/libs/stopwatch.cpp"
+'Finished building: ../src/libs/stopwatch.cpp'
+' '
+'Building file: ../src/gcode/gcode.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gcode/gcode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gcode/gcode.d" -MT"src/gcode/gcode.o" -o "src/gcode/gcode.o" "../src/gcode/gcode.cpp"
+'Finished building: ../src/gcode/gcode.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/fdm_config.h:12:0,
+                 from ../src/fdm_main.h:23,
+                 from ../src/main.cc:5:
+../src/config/Configuration.h:172:12: error: missing binary operator before token "("
+ #if ENABLED(SlidingModeTemp)
+            ^
+../src/config/Configuration.h:197:12: error: missing binary operator before token "("
+ #if ENABLED(PIDTEMP)
+            ^
+In file included from ../src/fdm_config.h:12:0,
+                 from ../src/fdm_main.h:23,
+                 from ../src/main.cc:5:
+../src/config/Configuration.h:249:12: error: missing binary operator before token "("
+ #if ENABLED(PIDTEMPBED)
+            ^
+In file included from ../src/fdm_main.h:29:0,
+                 from ../src/main.cc:5:
+../src/core/enum.h:104:12: error: missing binary operator before token "("
+ #if ENABLED(HOST_KEEPALIVE_FEATURE)
+            ^
+../src/core/enum.h:115:12: error: missing binary operator before token "("
+ #if ENABLED(EMERGENCY_PARSER)
+            ^
+../src/core/enum.h:132:12: error: missing binary operator before token "("
+ #if ENABLED(ADVANCED_PAUSE_FEATURE)
+            ^
+../src/core/enum.h:158:12: error: missing binary operator before token "("
+ #if ENABLED(DUAL_X_CARRIAGE) || ENABLED(DUAL_NOZZLE_DUPLICATION_MODE)
+            ^
+../src/core/enum.h:170:12: error: missing binary operator before token "("
+ #if ENABLED(CNC_WORKSPACE_PLANES)
+            ^
+In file included from ../src/fdm_config.h:9:0,
+                 from ../src/fdm_main.h:23,
+                 from ../src/main.cc:5:
+../src/core/macros.h:45:1: error: 'NOOP' does not name a type
+ NOOP
+ ^~~~
+In file included from ../src/fdm_main.h:29:0,
+                 from ../src/main.cc:5:
+../src/core/enum.h:62:25: error: '_BV' was not declared in this scope
+   DEBUG_ECHO          = _BV(0), ///< Echo commands in order as they are processed
+                         ^~~
+../src/core/enum.h:63:25: error: '_BV' was not declared in this scope
+   DEBUG_INFO          = _BV(1), ///< Print messages for code that has debug output
+                         ^~~
+../src/core/enum.h:64:25: error: '_BV' was not declared in this scope
+   DEBUG_ERRORS        = _BV(2), ///< Not implemented
+                         ^~~
+../src/core/enum.h:65:25: error: '_BV' was not declared in this scope
+   DEBUG_DRYRUN        = _BV(3), ///< Ignore temperature setting and E movement commands
+                         ^~~
+../src/core/enum.h:66:25: error: '_BV' was not declared in this scope
+   DEBUG_COMMUNICATION = _BV(4), ///< Not implemented
+                         ^~~
+../src/core/enum.h:67:25: error: '_BV' was not declared in this scope
+   DEBUG_LEVELING      = _BV(5), ///< Print detailed output for homing and leveling
+                         ^~~
+../src/core/enum.h:68:25: error: '_BV' was not declared in this scope
+   DEBUG_MESH_ADJUST   = _BV(6), ///< UBL bed leveling
+                         ^~~
+make: *** [src/main.o] ´íÎó 1
+16:26:19 **** Incremental Build of configuration Debug for project fdm_peek ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/fdm_config.h:12:0,
+                 from ../src/fdm_main.h:23,
+                 from ../src/main.cc:5:
+../src/config/Configuration.h:172:12: error: missing binary operator before token "("
+ #if ENABLED(SlidingModeTemp)
+            ^
+../src/config/Configuration.h:197:12: error: missing binary operator before token "("
+ #if ENABLED(PIDTEMP)
+            ^
+In file included from ../src/fdm_config.h:12:0,
+                 from ../src/fdm_main.h:23,
+                 from ../src/main.cc:5:
+../src/config/Configuration.h:249:12: error: missing binary operator before token "("
+ #if ENABLED(PIDTEMPBED)
+            ^
+In file included from ../src/fdm_main.h:29:0,
+                 from ../src/main.cc:5:
+../src/core/enum.h:104:12: error: missing binary operator before token "("
+ #if ENABLED(HOST_KEEPALIVE_FEATURE)
+            ^
+../src/core/enum.h:115:12: error: missing binary operator before token "("
+ #if ENABLED(EMERGENCY_PARSER)
+            ^
+../src/core/enum.h:132:12: error: missing binary operator before token "("
+ #if ENABLED(ADVANCED_PAUSE_FEATURE)
+            ^
+../src/core/enum.h:158:12: error: missing binary operator before token "("
+ #if ENABLED(DUAL_X_CARRIAGE) || ENABLED(DUAL_NOZZLE_DUPLICATION_MODE)
+            ^
+../src/core/enum.h:170:12: error: missing binary operator before token "("
+ #if ENABLED(CNC_WORKSPACE_PLANES)
+            ^
+In file included from ../src/fdm_config.h:9:0,
+                 from ../src/fdm_main.h:23,
+                 from ../src/main.cc:5:
+../src/core/macros.h:45:1: error: 'NOOP' does not name a type
+ NOOP
+ ^~~~
+In file included from ../src/fdm_main.h:29:0,
+                 from ../src/main.cc:5:
+../src/core/enum.h:62:25: error: '_BV' was not declared in this scope
+   DEBUG_ECHO          = _BV(0), ///< Echo commands in order as they are processed
+                         ^~~
+../src/core/enum.h:63:25: error: '_BV' was not declared in this scope
+   DEBUG_INFO          = _BV(1), ///< Print messages for code that has debug output
+                         ^~~
+../src/core/enum.h:64:25: error: '_BV' was not declared in this scope
+   DEBUG_ERRORS        = _BV(2), ///< Not implemented
+                         ^~~
+../src/core/enum.h:65:25: error: '_BV' was not declared in this scope
+   DEBUG_DRYRUN        = _BV(3), ///< Ignore temperature setting and E movement commands
+                         ^~~
+../src/core/enum.h:66:25: error: '_BV' was not declared in this scope
+   DEBUG_COMMUNICATION = _BV(4), ///< Not implemented
+                         ^~~
+../src/core/enum.h:67:25: error: '_BV' was not declared in this scope
+   DEBUG_LEVELING      = _BV(5), ///< Print detailed output for homing and leveling
+                         ^~~
+../src/core/enum.h:68:25: error: '_BV' was not declared in this scope
+   DEBUG_MESH_ADJUST   = _BV(6), ///< UBL bed leveling
+                         ^~~
+make: *** [src/main.o] ´íÎó 1
+16:26:48 **** Incremental Build of configuration Debug for project fdm_peek ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/fdm_config.h:12:0,
+                 from ../src/fdm_main.h:23,
+                 from ../src/main.cc:5:
+../src/config/Configuration.h:172:12: error: missing binary operator before token "("
+ #if ENABLED(SlidingModeTemp)
+            ^
+../src/config/Configuration.h:197:12: error: missing binary operator before token "("
+ #if ENABLED(PIDTEMP)
+            ^
+In file included from ../src/fdm_config.h:12:0,
+                 from ../src/fdm_main.h:23,
+                 from ../src/main.cc:5:
+../src/config/Configuration.h:249:12: error: missing binary operator before token "("
+ #if ENABLED(PIDTEMPBED)
+            ^
+In file included from ../src/fdm_main.h:29:0,
+                 from ../src/main.cc:5:
+../src/core/enum.h:104:12: error: missing binary operator before token "("
+ #if ENABLED(HOST_KEEPALIVE_FEATURE)
+            ^
+../src/core/enum.h:115:12: error: missing binary operator before token "("
+ #if ENABLED(EMERGENCY_PARSER)
+            ^
+../src/core/enum.h:132:12: error: missing binary operator before token "("
+ #if ENABLED(ADVANCED_PAUSE_FEATURE)
+            ^
+../src/core/enum.h:158:12: error: missing binary operator before token "("
+ #if ENABLED(DUAL_X_CARRIAGE) || ENABLED(DUAL_NOZZLE_DUPLICATION_MODE)
+            ^
+../src/core/enum.h:170:12: error: missing binary operator before token "("
+ #if ENABLED(CNC_WORKSPACE_PLANES)
+            ^
+In file included from ../src/HAL/HAL_AVR/fastio.h:12:0,
+                 from ../src/fdm_config.h:8,
+                 from ../src/fdm_main.h:23,
+                 from ../src/main.cc:5:
+../src/HAL/HAL_AVR/../../core/macros.h:45:1: error: 'NOOP' does not name a type
+ NOOP
+ ^~~~
+make: *** [src/main.o] ´íÎó 1
+16:34:59 **** Incremental Build of configuration Debug for project fdm_peek ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/fdm_config.h:12:0,
+                 from ../src/fdm_main.h:23,
+                 from ../src/main.cc:5:
+../src/config/Configuration.h:172:12: error: missing binary operator before token "("
+ #if ENABLED(SlidingModeTemp)
+            ^
+../src/config/Configuration.h:197:12: error: missing binary operator before token "("
+ #if ENABLED(PIDTEMP)
+            ^
+In file included from ../src/fdm_config.h:12:0,
+                 from ../src/fdm_main.h:23,
+                 from ../src/main.cc:5:
+../src/config/Configuration.h:249:12: error: missing binary operator before token "("
+ #if ENABLED(PIDTEMPBED)
+            ^
+In file included from ../src/fdm_main.h:29:0,
+                 from ../src/main.cc:5:
+../src/core/enum.h:104:12: error: missing binary operator before token "("
+ #if ENABLED(HOST_KEEPALIVE_FEATURE)
+            ^
+../src/core/enum.h:115:12: error: missing binary operator before token "("
+ #if ENABLED(EMERGENCY_PARSER)
+            ^
+../src/core/enum.h:132:12: error: missing binary operator before token "("
+ #if ENABLED(ADVANCED_PAUSE_FEATURE)
+            ^
+../src/core/enum.h:158:12: error: missing binary operator before token "("
+ #if ENABLED(DUAL_X_CARRIAGE) || ENABLED(DUAL_NOZZLE_DUPLICATION_MODE)
+            ^
+../src/core/enum.h:170:12: error: missing binary operator before token "("
+ #if ENABLED(CNC_WORKSPACE_PLANES)
+            ^
+In file included from ../src/HAL/HAL_AVR/fastio.h:12:0,
+                 from ../src/fdm_config.h:8,
+                 from ../src/fdm_main.h:23,
+                 from ../src/main.cc:5:
+../src/HAL/HAL_AVR/../../core/macros.h:44:1: error: 'NOOP' does not name a type
+ NOOP
+ ^~~~
+make: *** [src/main.o] ´íÎó 1
+16:42:33 **** Incremental Build of configuration Debug for project fdm_peek ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/fdm_config.h:12:0,
+                 from ../src/fdm_main.h:23,
+                 from ../src/main.cc:5:
+../src/config/Configuration.h:172:12: error: missing binary operator before token "("
+ #if ENABLED(SlidingModeTemp)
+            ^
+../src/config/Configuration.h:197:12: error: missing binary operator before token "("
+ #if ENABLED(PIDTEMP)
+            ^
+In file included from ../src/fdm_config.h:12:0,
+                 from ../src/fdm_main.h:23,
+                 from ../src/main.cc:5:
+../src/config/Configuration.h:249:12: error: missing binary operator before token "("
+ #if ENABLED(PIDTEMPBED)
+            ^
+In file included from ../src/fdm_main.h:29:0,
+                 from ../src/main.cc:5:
+../src/core/enum.h:104:12: error: missing binary operator before token "("
+ #if ENABLED(HOST_KEEPALIVE_FEATURE)
+            ^
+../src/core/enum.h:115:12: error: missing binary operator before token "("
+ #if ENABLED(EMERGENCY_PARSER)
+            ^
+../src/core/enum.h:132:12: error: missing binary operator before token "("
+ #if ENABLED(ADVANCED_PAUSE_FEATURE)
+            ^
+../src/core/enum.h:158:12: error: missing binary operator before token "("
+ #if ENABLED(DUAL_X_CARRIAGE) || ENABLED(DUAL_NOZZLE_DUPLICATION_MODE)
+            ^
+../src/core/enum.h:170:12: error: missing binary operator before token "("
+ #if ENABLED(CNC_WORKSPACE_PLANES)
+            ^
+make: *** [src/main.o] ´íÎó 1
+17:19:19 **** Incremental Build of configuration Debug for project fdm_peek ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: fdm_peek.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fdm_peek_bsp/ps7_cortexa9_0/lib -o "fdm_peek.elf"  ./src/module/temperature/temperature.o  ./src/module/motion/planner.o ./src/module/motion/stepper.o  ./src/module/printcounter.o  ./src/libs/nozzle.o ./src/libs/stopwatch.o  ./src/gcode/gcode.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fdm_peek.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fdm_peek.elf  |tee "fdm_peek.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18992	   1144	  22576	  42712	   a6d8	fdm_peek.elf
+'Finished building: fdm_peek.elf.size'
+' '
+17:24:04 **** Incremental Build of configuration Debug for project fdm_peek ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: fdm_peek.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fdm_peek_bsp/ps7_cortexa9_0/lib -o "fdm_peek.elf"  ./src/module/temperature/temperature.o  ./src/module/motion/planner.o ./src/module/motion/stepper.o  ./src/module/printcounter.o  ./src/libs/nozzle.o ./src/libs/stopwatch.o  ./src/gcode/gcode.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fdm_peek.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fdm_peek.elf  |tee "fdm_peek.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18992	   1144	  22576	  42712	   a6d8	fdm_peek.elf
+'Finished building: fdm_peek.elf.size'
+' '
+20:04:23 **** Incremental Build of configuration Debug for project fdm_peek ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fdm_peek_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: fdm_peek.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fdm_peek_bsp/ps7_cortexa9_0/lib -o "fdm_peek.elf"  ./src/module/temperature/temperature.o  ./src/module/motion/planner.o ./src/module/motion/stepper.o  ./src/module/printcounter.o  ./src/libs/nozzle.o ./src/libs/stopwatch.o  ./src/gcode/gcode.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fdm_peek.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fdm_peek.elf  |tee "fdm_peek.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18992	   1144	  22576	  42712	   a6d8	fdm_peek.elf
+'Finished building: fdm_peek.elf.size'
+' '

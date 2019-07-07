@@ -1,0 +1,21 @@
+/*
+ * fastio.h
+ *
+ *  Created on: 2019年6月30日
+ *      Author: W530
+ */
+
+#ifndef SRC_HAL_HAL_AVR_FASTIO_H_
+#define SRC_HAL_HAL_AVR_FASTIO_H_
+
+//#include <avr/io.h>
+#include "../../core/macros.h"
+
+
+#ifndef _BV
+  #define _BV(PIN) (1UL << PIN)   // 1ul 表示无符号长整形; 
+  //1ul 的二进制向左移动PIN个单位
+#endif
+
+
+#endif /* SRC_HAL_HAL_AVR_FASTIO_H_ */

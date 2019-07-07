@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;fdm_peek/src/module/motion/stepper&apos; to &apos;stepper.cpp&apos;" description="Rename resource &apos;stepper&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/module/motion/stepper" name="stepper.cpp" stamp="1557140647612" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;fdm_peek/src/main.cc&apos; to &apos;main.cpp&apos;" description="Rename resource &apos;main.cc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main.cc" name="main.cpp" stamp="1557141117645" updateReferences="true"/>
+</session>

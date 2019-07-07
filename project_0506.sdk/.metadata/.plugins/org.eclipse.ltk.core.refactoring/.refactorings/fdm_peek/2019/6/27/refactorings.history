@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;fdm_peek/src/core/board.h&apos; to &apos;boards.h&apos;" description="Rename resource &apos;board.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/core/board.h" name="boards.h" stamp="1561866767362" updateReferences="true"/>
+</session>
