@@ -1,0 +1,40 @@
+# Xilinx build artifacts
+*.o
+*.elf
+*.bin
+*.jou
+*.log
+*.str
+*.zip
+*.bif
+*.mcs
+*.prm
+*.pyc
+
+# Vivado / SDK generated directories
+.metadata/
+RemoteSystemsTempFiles/
+webtalk/
+proj/project_0506.sdk/.metadata/
+proj/project_0506.sdk/RemoteSystemsTempFiles/
+proj/project_0506.sdk/webtalk/
+proj/project_0506.runs/
+proj/project_0506.cache/
+proj/project_0506.hw/
+proj/.Xil/
+
+# SDK Debug/Release builds
+Debug/
+Release/
+*/Debug/
+*/Release/
+
+# Backup files
+*~
+*.bak
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
