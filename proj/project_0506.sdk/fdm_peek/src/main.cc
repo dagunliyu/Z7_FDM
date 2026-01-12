@@ -1,25 +1,23 @@
-/*
- * Empty C++ Application
+/**
+ * Marlin 3D Printer Firmware
+ * Main entry point for Xilinx Zynq-7000 platform
  */
 
-#include "fdm_main.h"
+#include "inc/MarlinConfig.h"
+#include "MarlinCore.h"
 
-//#include "lcd/ultralcd.h"
-#include "module/motion/planner.h"
-#include "module/motion/stepper.h"
-//#include "module/motion/endstops.h"
-#include "module/temperature/temperature.h"
-//#include "sd/cardreader.h"
-//#include "config/configuration_store.h"
-#include "core/language.h"
-//#include "pins_arduino.h"
-#include "math.h"
-#include "libs/nozzle.h"
-#include "libs/duration_t.h"
-#include "core/types.h"
-#include "gcode/gcode.h"
+// External function declarations from MarlinCore
+extern void setup();
+extern void loop();
 
-int main()
-{
-	return 0;
+int main() {
+  // Initialize Marlin firmware
+  setup();
+  
+  // Main firmware loop
+  for (;;) {
+    loop();
+  }
+  
+  return 0;
 }

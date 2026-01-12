@@ -1,99 +1,120 @@
-///*
-// * stopwatch.h
-// *
-// *  Created on: 2019年6月8日
-// *      Author: W530
-// */
-//
-//#ifndef SRC_LIBS_STOPWATCH_H_
-//#define SRC_LIBS_STOPWATCH_H_
-//
-//#include "../core/macros.h"   // 定义ENABLE DISABLE等包装宏
-//
-//// Print debug messages with M111 S2 (Uses 156 bytes of PROGMEM)
-////#define DEBUG_STOPWATCH
-//
-//
-//class Stopwatch{
-//
-//private:
-//	enum State{
-//		STOPPED,
-//		RUNNING,
-//		PAUSED
-//	};
-//	Stopwatch::State state; // 构建枚举对象
-//	millis_t accumulator;
-//	millis_t startTimestamp;
-//	millis_t stopTimestamp;
-//
-//public:
-//
-//	/*
-//	 * @brief 类构造函数StopWatch
-//	 */
-//	Stopwatch();
-//
-//	/*
-//	 * @brief stops stopwatch
-//	 * @details: 停止正在运行的计时器，如果当前没有计时器正在运行，则silently忽略请求
-//	 * @return 返回true表示方法成功执行
-//	 */
-//	bool stop();
-//
-//    /**
-//     * @brief Pause   stopwatch
-//     * @details 暂停运行的timer，如果当前没有计时器正在运行，则silently忽略请求
-//     * @return 返回true表示方法成功执行
-//     */
-//    bool pause();
-//
-//    /**
-//     * @brief Starts the stopwatch
-//     * @details 开启timer，如果当前没有计时器正在运行，则silently忽略请求
-//     * @return 返回true表示方法成功执行
-//     */
-//    bool start();
-//
-//	/*
-//	 * @brief 复位 stopwatch
-//	 * @details: 将所有设置复位到其默认值.
-//	 */
-//	void reset();
-//
-//    /**
-//     * @brief 检查timer是否正在运行
-//     * @details 返回true表示timer正在运行,false反之
-//     * @return 返回true表示stopwatch正在运行
-//     */
-//    bool isRunning();
-//
-//    /**
-//     * @brief 检查timer是否被暂停
-//     * @details 返回true表示timer当前已经被暂停,false反之
-//     * @return 返回true表示stopwatch已暂停
-//     */
-//    bool isPaused();
-//
-//    /**
-//     * @brief 获取运行的时间running time
-//     * @details 返回timer已经运行的时间(s) total number of seconds the timer has been running.
-//     * @return 从启动stopwatch开始到当前的时间间隔
-//     */
-//    millis_t duration();
-//
-//
-//	#if ENABLED(DEBUG_STOPWATCH)
-//
-//      /**
-//       * @brief Prints debug信息
-//       * @details print一个简单的调试信息： "Stopwatch::function"
-//       */
-//      static void debug(const char func[]);
-//
-//    #endif
-//
-//
-//};
-//
-//#endif /* SRC_LIBS_STOPWATCH_H_ */
+/**
+ * Marlin 3D Printer Firmware
+ * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
+ *
+ * Based on Sprinter and grbl.
+ * Copyright (c) 2011 Camiel Gubbels / Erik van der Zalm
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ *
+ */
+#pragma once
+
+#include "../inc/MarlinConfig.h"
+
+// Print debug messages with M111 S2 (Uses 156 bytes of PROGMEM)
+//#define DEBUG_STOPWATCH
+
+/**
+ * @brief Stopwatch class
+ * @details This class acts as a timer proving stopwatch functionality including
+ * the ability to pause the running time counter.
+ */
+class Stopwatch {
+  private:
+    enum State : char { STOPPED, RUNNING, PAUSED };
+
+    static Stopwatch::State state;
+    static millis_t accumulator;
+    static millis_t startTimestamp;
+    static millis_t stopTimestamp;
+
+  public:
+    /**
+     * @brief Initialize the stopwatch
+     */
+    FORCE_INLINE static void init() { reset(); }
+
+    /**
+     * @brief Stop the stopwatch
+     * @details Stop the running timer, it will silently ignore the request if
+     *          no timer is currently running.
+     * @return true on success
+     */
+    static bool stop();
+    static bool abort() { return stop(); } // Alias by default
+
+    /**
+     * @brief Pause the stopwatch
+     * @details Pause the running timer, it will silently ignore the request if
+     *          no timer is currently running.
+     * @return true on success
+     */
+    static bool pause();
+
+    /**
+     * @brief Start the stopwatch
+     * @details Start the timer, it will silently ignore the request if the
+     *          timer is already running.
+     * @return true on success
+     */
+    static bool start();
+
+    /**
+     * @brief Resume the stopwatch
+     * @details Resume a timer from a given duration
+     */
+    static void resume(const millis_t with_time);
+
+    /**
+     * @brief Reset the stopwatch
+     * @details Reset all settings to their default values.
+     */
+    static void reset();
+
+    /**
+     * @brief Check if the timer is running
+     * @details Return true if the timer is currently running, false otherwise.
+     * @return true if stopwatch is running
+     */
+    FORCE_INLINE static bool isRunning() { return state == RUNNING; }
+
+    /**
+     * @brief Check if the timer is paused
+     * @details Return true if the timer is currently paused, false otherwise.
+     * @return true if stopwatch is paused
+     */
+    FORCE_INLINE static bool isPaused() { return state == PAUSED; }
+
+    /**
+     * @brief Get the running time
+     * @details Return the total number of seconds the timer has been running.
+     * @return the delta since starting the stopwatch
+     */
+    static millis_t duration();
+
+    #ifdef DEBUG_STOPWATCH
+
+      /**
+       * @brief Print a debug message
+       * @details Print a simple debug message "Stopwatch::function"
+       */
+      static void debug(FSTR_P const);
+
+    #else
+
+      static void debug(FSTR_P const) {}
+
+    #endif
+};
